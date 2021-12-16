@@ -2,7 +2,7 @@
 Add Azure DevOps Release Gates based on the status of detectors in Splunk Observability Cloud.
 
 ## Setup your Service Connection
-After installing the Splunk Alert Gates extension you will need to setup 
+After installing the Splunk Observability Alert Gates extension you will need to setup 
 your Splunk API Service Endpoint 
 1. Click Project Settings from the bottom left side of your screen in the main Azure DevOps Project area
 2. Click Service Connections from the Pipelines area of Project Settings
