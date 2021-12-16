@@ -17,14 +17,14 @@
   "version": {
       "Major": 0,
       "Minor": 1,
-      "Patch": 0
+      "Patch": 3
   },
   "instanceNameFormat": "Query Splunk Observability monitors",
   "inputs": [
       {
-          "name": "splunk-detector-api",
-          "type": "connectedService:splunk-api",
-          "label": "Splunk API",
+          "name": "splunk-alerts-api",
+          "type": "connectedService:splunk-alerts-api",
+          "label": "Splunk Observability Alerts API",
           "defaultValue": "",
           "required": "true",
           "helpMarkDown": "Select a Splunk API Service connection"
@@ -40,8 +40,8 @@
   "execution": {
       "HttpRequest": {
           "Execute": {
-              "EndpointId": "$(splunk-detector-api)",
-              "EndpointUrl": "$(endpoint.url)/detector/$(detectorId)/incidents",
+              "EndpointId": "$(splunk-alerts-api)",
+              "EndpointUrl": "$(endpoint.url)detector/$(detectorId)/incidents",
               "Method": "GET",
               "Body": "",
               "Headers": "{\"Content-Type\": \"application/json\"}",
