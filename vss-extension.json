@@ -1,8 +1,8 @@
 {
   "manifestVersion": 1,
   "id": "splunk-alert",
-  "name": "Splunk Alert Gates",
-  "version": "0.1.0",
+  "name": "Splunk Observability Alert Gates",
+  "version": "0.1.4",
   "publisher": "jeremyh-splunk",
   "public": false,
   "targets": [
@@ -55,25 +55,25 @@
           }
       },
       {
-        "id": "splunk-api-endpoint",
-        "description": "Splunk API endpoint",
+        "id": "splunk-alerts-api-endpoint",
+        "description": "Alerts Service endpoint type for Splunk Observability",
         "type": "ms.vss-endpoint.service-endpoint-type",
         "targets": [ 
           "ms.vss-endpoint.endpoint-types" 
         ],
         "properties": {
-          "name": "splunk-api",
-          "displayName": "Splunk API",
+          "name": "splunk-alerts-api",
+          "displayName": "Splunk Observability Alerts API",
         "icons": {
           "default": "icon.png",
           "large": "icon.png"
         },
-        "url":  {
-          "displayName": "Splunk API URL",
-          "value": "https://api.us1.signalfx.com/v2",
-          "isVisible": "false",
-          "required": "false"
-          },
+        "url": {
+          "displayName": "Splunk Observability API URL",
+          "helpText": "URL for your Splunk Observability Instance's API (E.G. https://api.us1.signalfx.com/v2/)",
+          "isVisible": "true",
+          "required": "true"
+        },
           "authenticationSchemes": [
             {
               "type": "ms.vss-endpoint.endpoint-auth-scheme-token",
