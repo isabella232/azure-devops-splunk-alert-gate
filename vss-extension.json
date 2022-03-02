@@ -2,9 +2,9 @@
   "manifestVersion": 1,
   "id": "splunk-alert",
   "name": "Splunk Observability Alert Gates",
-  "version": "0.1.4",
+  "version": "1.0.2",
   "publisher": "jeremyh-splunk",
-  "public": false,
+  "public": true,
   "targets": [
       {
           "id": "Microsoft.VisualStudio.Services"
@@ -35,11 +35,23 @@
   },
 
 "links": {
+  "home": {
+    "uri": "https://www.splunk.com"
+  },
+  "support": {
+      "uri": "https://github.com/splunk/azure-devops-splunk-alert-gate/issues"
+  },
+  "repository": {
+      "uri": "https://github.com/splunk/azure-devops-splunk-alert-gate/"
+  },
+  "issues": {
+      "uri": "https://github.com/splunk/azure-devops-splunk-alert-gate/issues"
+  },
   "getstarted": {
-    "uri": "https://dev.splunk.com/observability/reference/api/"
+    "uri": "https://dev.splunk.com/observability/"
   },
   "learn": {
-    "uri": "https://dev.splunk.com/observability/reference/api/"
+    "uri": "https://dev.splunk.com/observability/reference/api/ingest_data/latest#endpoint-send-events"
   }
 },
 
